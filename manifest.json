@@ -1,0 +1,22 @@
+{
+    "name":"Lite Automatic Twitch",
+    "description":"Lite Automatic Twitch 개발 단계 소스 입니다.",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "icons": {
+      "16": "./images/icon-16.png",
+      "32": "./images/icon-32.png",
+      "48": "./images/icon-128.png",
+      "128": "./images/icon-128.png"
+    },
+    "content_scripts":[
+       {
+        "js": ["./src/content.js"],
+        "matches":["<all_urls>"] 
+       }
+    ],
+    "action": {
+      "default_icon": "./images/icon-16.png",
+      "default_popup": "./src/popup.html"
+    }
+}
