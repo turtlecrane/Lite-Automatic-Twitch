@@ -11,8 +11,8 @@
     },
     "content_scripts":[
        {
-        "js": ["./src/content.js"],
-        "matches":["<all_urls>"] 
+        "js": ["./src/arrive.js","./src/content.js"],
+        "matches":["*://*.twitch.tv/*"] 
        }
     ],
     "action": {
